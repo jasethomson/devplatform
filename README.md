@@ -4,6 +4,7 @@
 
 ## DevPlatform Details
 
+Create a jobs platform for managing your job search.
 
 ### Project Tech Stack
 - JavaScript
