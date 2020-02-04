@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+  width: 100%;
+  background: #326273;
+  position: fixed;
+  top: 0;
+  font-size: 20px;
+  padding: 0 16px 0 0;
+  z-index: 100;
+}
+
+nav a{
+  padding: 0 32px;
+  color: #eeeeee;
+  transition: .4s;
+
+}
+
+nav a:hover{
+
+  color: rgb(28, 151, 233);
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.active {
+  color: #E8A98D;
+}
+
+#logo {
+  display: flex;
+  height: 100%;
+  background: #eeeeee;
+  align-items: center;
+  transition: .4s;
+}
+
+#logo:hover{
+  background: whitesmoke;
+}
+
+#logo img {
+  height: 68px;
+}

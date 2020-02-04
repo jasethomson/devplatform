@@ -1,11 +1,18 @@
 import React from 'react';
+import AppContext from '../lib/context';
 
-class Jobs extends React.Component {
+export default class Jobs extends React.Component {
+  constructor(props){
+    super(props);
+  }
   render() {
+    console.log(this.context);
     return (
-      <h1>Jobs</h1>
+      <div>
+        <h1>Jobs</h1>
+      </div>
     );
   }
 }
 
-export default Jobs;
+Jobs.contextType = AppContext;
