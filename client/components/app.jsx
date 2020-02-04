@@ -1,31 +1,29 @@
 import React from 'react';
+import Home from './home';
+import Jobs from './jobs';
+import AppContext from '../lib/context';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+
+
 
 class App extends React.Component{
   constructor(props){
     super(props);
-    this.setView = this.setView.bind(this);
 
     this.state = {
-      view: {
-        page: 'home',
-        params: {}
-      }
+      placeHolder: false
     }
-  }
-
-  setView(page,params){
-    this.setState({view: {page, params}});
   }
 
   render(){
-    if(this.state.view.page === "home"){
-      return (
-        <div>
-          Hello, World <i className="fas fa-air-freshener"></i>
-        </div>
-      )
-    }
+    return (
+      <Router>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/jobs" component={Jobs}/>
+      </Router>
+    );
   }
+
 }
 
 export default App;
