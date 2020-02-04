@@ -1,12 +1,13 @@
 import React from 'react';
 import Home from './home';
 import Jobs from './jobs';
+import Nav from './nav';
 import AppContext from '../lib/context';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 
 
-class App extends React.Component{
+export default class App extends React.Component{
   constructor(props){
     super(props);
 
@@ -16,14 +17,19 @@ class App extends React.Component{
   }
 
   render(){
+    const contextValue = {
+      placeHolder: this.state.placeHolder
+    };
     return (
-      <Router>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/jobs" component={Jobs}/>
-      </Router>
+      <div>
+        <Nav/>
+        <AppContext.Provider value={contextValue}>
+          <Router>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/jobs" component={Jobs}/>
+          </Router>
+        </AppContext.Provider>
+      </div>
     );
   }
-
 }
-
-export default App;

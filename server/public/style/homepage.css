@@ -1,0 +1,14 @@
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* TEMP */
+h1 {
+  position: fixed;
+  top: 200px;
+}
