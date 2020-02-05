@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './home';
 import Jobs from './jobs';
 import Nav from './nav';
+import Footer from './footer';
 import AppContext from '../lib/context';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
@@ -29,6 +30,7 @@ export default class App extends React.Component{
             <Route exact path="/jobs" component={Jobs}/>
           </Router>
         </AppContext.Provider>
+        <Footer />
       </div>
     );
   }

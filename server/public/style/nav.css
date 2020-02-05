@@ -12,14 +12,12 @@ nav {
 }
 
 nav a{
-  padding: 0 32px;
+  padding: 0 10px;
   color: #eeeeee;
   transition: .4s;
-
 }
 
 nav a:hover{
-
   color: rgb(28, 151, 233);
 }
 
