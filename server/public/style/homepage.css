@@ -21,8 +21,9 @@ a {
 
 #homePage h1 {
   color: #eeeeee;
-  background: rgba(192,192,192,.8);
-  padding: 8px;
+  font-weight: stronger;
+  background: rgba(192,192,192,.9);
+  padding: 25px;
   margin-bottom: 400px;
   max-width: 60%;
   text-align: center;
