@@ -30,7 +30,7 @@ export default class App extends React.Component{
             <Route exact path="/jobs" component={Jobs}/>
           </Router>
         </AppContext.Provider>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }
