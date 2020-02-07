@@ -7,8 +7,24 @@ a {
   text-decoration: none;
 }
 
-/* TEMP */
-h1 {
-  position: fixed;
-  top: 200px;
+#homePage {
+  background-image: url(../assets/lake_tahoe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#homePage h1 {
+  color: #eeeeee;
+  background: rgba(192,192,192,.8);
+  padding: 8px;
+  margin-bottom: 400px;
+  max-width: 60%;
+  text-align: center;
+  border-radius: 5px;
 }

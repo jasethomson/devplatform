@@ -1,0 +1,24 @@
+footer {
+  padding: 8px;
+  background: black;
+  color: #eeeeee;
+  display: flex;
+
+}
+
+footer a {
+  color: white;
+}
+
+#left-footer{
+  border-right: 1px solid rgb(28, 151, 233);
+  /* flex: 1; */
+
+  padding-left: 32px;
+}
+
+#left-footer ul{
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+}
