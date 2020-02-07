@@ -1,0 +1,27 @@
+
+.flashcardContainer{
+  margin-top: 68px;
+}
+
+.flashcard {
+  margin-top: 150px;
+  margin-left: auto;
+  width: 36%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted black;
+}
+
+.flashCardTop {
+  border: 1px solid black;
+  height: 40px;
+  width: 100%;
+}
+
+.flashCardBottom {
+  border: 1px solid black;
+  height: 200px;
+  width: 100%;
+  margin-top: 5px;
+}

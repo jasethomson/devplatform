@@ -3,8 +3,10 @@ import Home from './home';
 import Jobs from './jobs';
 import Nav from './nav';
 import Footer from './footer';
+import FlashCards from './flashCards';
 import AppContext from '../lib/context';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
+
 
 
 
@@ -27,7 +29,7 @@ export default class App extends React.Component{
         <AppContext.Provider value={contextValue}>
           <Router>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/jobs" component={Jobs}/>
+            <Route exact path="/flashcards" component={FlashCards}/>
           </Router>
         </AppContext.Provider>
         <Footer />
