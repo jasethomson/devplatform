@@ -16,7 +16,7 @@ export default class Nav extends React.Component{
             <a className="active" href="/">Home</a>
           </li>
           <li>
-            <a href="/jobs">Jobs</a>
+            <a href="/flashcards">Flashcards</a>
           </li>
           <li>
             <a href="/application_status">Application Status</a>
