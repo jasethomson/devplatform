@@ -3,22 +3,88 @@ footer {
   background: black;
   color: #eeeeee;
   display: flex;
-
+  justify-content: center;
 }
 
 footer a {
   color: white;
 }
 
-#left-footer{
-  border-right: 1px solid rgb(28, 151, 233);
-  /* flex: 1; */
-
-  padding-left: 32px;
+#leftFooter,
+#rightFooter {
+  display: flex;
+  width: 50%;
 }
 
-#left-footer ul{
+/* Left Footer  */
+
+#leftFooter{
+  border-right: 1px solid rgb(28, 151, 233);
+  justify-content: center;
+}
+
+#leftFooter ul{
   padding: 0;
   list-style: none;
   line-height: 1.5;
+}
+
+#leftFooter > ul > li > a{
+  transition: .4s;
+}
+
+#leftFooter > ul > li > a:hover {
+  color: rgb(28, 151, 233);
+}
+
+#footerLogo {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  transition: .4s;
+  padding: 4px 10px;
+  margin: 20px 70px 0 0;
+}
+
+#footerLogo > a > img {
+  height: 68px;
+}
+
+#footerLogo > a > img:hover {
+  background-color: whitesmoke;
+}
+
+/* Right Footer  */
+
+#rightFooter {
+  align-items: center;
+  flex-direction: column;
+}
+
+#rightFooter > h3 {
+  text-align: center;
+}
+
+#rightFooter > ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+#rightFooter > ul > li {
+  margin: 0 20px;
+  transition: .4s;
+}
+
+.fa-linkedin:hover{
+  color: #0E76A8;
+}
+
+.fa-github-square:hover{
+  color: #696969;
+}
+
+.fa-briefcase:hover{
+  color: #ff0f00;
 }

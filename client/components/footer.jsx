@@ -6,8 +6,8 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer>
-        <div id="left-footer">
-          <div id="logo">
+        <div id="leftFooter">
+          <div id="footerLogo">
             <a href="/">
               <img src="./assets/devplatform_logo.png" alt="logo" />
             </a>
@@ -33,7 +33,7 @@ export default class Footer extends React.Component {
             </li>
           </ul>
         </div>
-        <div id="right-footer">
+        <div id="rightFooter">
           <h3>
             Developed by Jase Thomson<br />
             Learn more about Jase on
@@ -41,17 +41,17 @@ export default class Footer extends React.Component {
           <ul>
             <li>
               <a href="https://www.linkedin.com/in/jase-thomson/" target="_blank">
-                <i className="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin fa-2x"></i>
               </a>
             </li>
             <li>
               <a href="https://www.github.com/jasethomson/" target="_blank">
-                <i className="fab fa-github-square"></i>
+                <i className="fab fa-github-square fa-2x"></i>
               </a>
             </li>
             <li>
               <a href="https://www.jasethomson.com/" target="_blank">
-                <i className="fas fa-briefcase"></i>
+                <i className="fas fa-briefcase fa-2x"></i>
               </a>
             </li>
           </ul>
